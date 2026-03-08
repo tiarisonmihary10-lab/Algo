@@ -1,0 +1,93 @@
+
+Algorithme presentation_et economie
+
+Variable 
+var nom: CHAINE ;
+var prenom: CHAINE ;
+var age: ENTIER ;
+
+var argent_euro: REEL;
+var argent_ariary: REEL ;
+var bourse: REEL;
+var economie: REEL ;
+var possession: BOOLEEN
+debut
+
+Afficher("veuillez saisir votre nom ainsi que votre prenom:");
+lire(nom);
+lire(prenom);
+
+Afficher("Quel age avez_vous:")
+lire(age)
+
+afficher("vous avez quelque economie,VRAI Ou FAUX ")
+lire(possession)
+Afficher("Quel est le montant ")
+lire(argent_ariary)
+Afficher("voici votre argent en euro" )
+argent_euro<- argent_ariary/4900
+Afficher(argent_euro)
+Afficher("quel est le montant de votre bourse")
+
+lire(bourse)
+Afficher("le montant de votre economie est de ")
+economie<- bourse + argent_ariary
+Afficher("vous avez ", economie," ariary");
+fin
+
+Algorithme DialogueUtilisateur
+Variable
+var nomUtilisateur: CHAINE;
+var ageUtilisateur: ENTIER;
+
+debut
+
+afficher("Bonjour ! Quel est votre nom ?");
+lire(nomUtilisateur);
+
+afficher("Quel âge avez-vous, ", nomUtilisateur, " ?");
+lire(ageUtilisateur);
+
+afficher("Enchanté ", nomUtilisateur, ". Vous avez donc ", ageUtilisateur, " ans. Bienvenue !");
+fin
+
+Algorithme FruitPrefere
+Variable
+  var fruitpr : CHAINE ;
+
+debut
+  Afficher ("Quelle est votre fruits preféré??:");
+
+  lire(fruitpr);
+
+  Afficher ("damn,le",fruitpr,"est aussi mon fruit prefere");
+
+fin
+Algorithme CalculSimple
+Variable
+  var a: ENTIER <- 10;
+  var b: ENTIER <- 3;
+  var resultatReel: REEL;
+  var resultatEntier: ENTIER;
+
+debut
+  
+  resultatEntier <- a + b; 
+  afficher("a + b = ", resultatEntier);
+
+  
+  resultatEntier <- a - b;  
+  afficher("a - b = ", resultatEntier);
+
+  
+  resultatEntier <- a * b; 
+  afficher("a * b = ", resultatEntier);
+
+  
+  resultatReel <- a / b;  
+  afficher("a / b = ", resultatReel);
+
+  
+  resultatEntier <- a div b; 
+  afficher("a div b = ", resultatEntier);
+fin
